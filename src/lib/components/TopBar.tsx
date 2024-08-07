@@ -1,5 +1,8 @@
+"use client"
+
 import Link from "next/link"
 import React from "react";
+import { usePathname } from "next/navigation";
 
 interface Page {
 	name: string;
@@ -7,16 +10,14 @@ interface Page {
 }
 
 export default function TopBar({links}: {"links": Page[]}) {
+	const getUL = (path: string) => usePathname() === path ? "underline" : ""
+
 	return (
 	<header>
-		<div className="flex flex-row pt-4 pl-4">
-			<span className="font-bold">aguywhosaguy.com</span>
-			<span className="mx-2">-</span>
+		<div className="flex flex-col pt-4 pl-4">
+			<p className="font-bold">aguywhosaguy.com</p>
 			{links.map((link, index) => (
-				<React.Fragment key={index}>
-					<Link href={"/" + link.path}>{link.name}</Link>
-					{index < links.length - 1 && <span className="mx-2">-</span>}
-				</React.Fragment>
+				<Link href={link.path} key={index} className={getUL(link.path)}>{link.name}</Link>
 			))}
 		</div>
 	</header>
