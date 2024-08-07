@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import { Source_Code_Pro } from "next/font/google";
 import { type Metadata } from "next";
 import TopBar from "@/lib/components/TopBar";
+import TopBarProto from "@/lib/components/TopBarProto";
 
 const sourceCodePro = Source_Code_Pro({
   weight: "400",
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${sourceCodePro.className}`}>
       <body>
-        <TopBar links={[{name: "Home", path: ""}, {name: "Projects", path: "projects"}]} />
+        <TopBarProto links={[{name: "Home", path: ""}, {name: "Projects", path: "projects"}]} />
         {children}
       </body>
     </html>
