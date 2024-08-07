@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <main className="px-20 py-30 my-20 mx-auto max-w-screen-md">
+    <main className="px-20 py-30 my-20 mx-auto max-w-screen-5xl">
       <div className="space-y-5">
         <h1 className="text-5xl font-bold">Welcome!</h1>
         <div className="space-y-3">
