@@ -16,7 +16,7 @@ export default function HomePage() {
               <li><a href="https://youtube.com/aguywhosaguy" className="font-bold underline">YouTube</a></li>
             </ul>
             <p>I also go by the same username on Discord, @aguywhosaguy.</p>
-            <p>Check out the projects tab to see what I&#39;m up to. At the time of writing this, however, the projects there aren't representative of my current programming skills.</p>
+            <p>Check out the projects tab to see what I&#39;m up to. At the time of writing this, however, the projects there aren&#39;t representative of my current programming skills.</p>
         </div>
       </div>
     </main>
