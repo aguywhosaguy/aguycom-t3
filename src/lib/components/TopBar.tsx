@@ -10,8 +10,6 @@ interface Page {
 }
 
 export default function TopBar({links}: {"links": Page[]}) {
-	const getUL = (path: string) => usePathname() === path ? "underline" : ""
-
 	return (
 	<header>
 		<div className="flex flex-col pt-4 pl-4">
