@@ -3,7 +3,6 @@ import "@/styles/globals.css";
 import { Source_Code_Pro } from "next/font/google";
 import { type Metadata } from "next";
 import TopBar from "@/lib/components/TopBar";
-import TopBarOld from "@/lib/components/TopBarOld";
 
 const sourceCodePro = Source_Code_Pro({
   weight: "400",
