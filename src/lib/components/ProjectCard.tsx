@@ -6,20 +6,24 @@ export interface CardDetails {
 }
 
 export enum Tag {
-	Website = "website",
-	Package = "package",
-	Extension = "extension"
+	Website = "Website",
+	Package = "Package",
+	Extension = "Extension",
+    Other = "Other"
 }
 
 export function ProjectCard({details}: {"details": CardDetails}) {
     return (
-    <div className="relative border-2 w-64 h-48">
-        <div className="absolute top-0 left-0 p-2 font-bold justify-start">
+    <div className="border-2 w-64 h-48 overflow-scroll">
+        <p className="p-1 font-bold text-center">
             {details.name}
-        </div>
-        <div>
-
-        </div>
+        </p>
+        <p className="p-1 font-light text-center text-sm">
+            {details.tag}
+        </p>
+        <a href={details.url} className="p-2 block text-center text-wrap underline">
+            {details.description}
+        </a>
     </div>
     )
 }
