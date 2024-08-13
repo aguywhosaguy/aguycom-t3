@@ -9,7 +9,7 @@ const Projects: CardDetails[] = [
 		"name": "Thirty Dollar Extension",
 		"tag": Tag.Extension,
 		"description": "An extension that adds custom sounds to GDColon's 30 Dollar Website",
-		"url": "https://github.com/aguywhosaguy/thirtydollarcustomsounds"
+		"url": "https://github.com/aguywhosaguy/thirtyDollarExtension"
 	},
 	{
 		"name": "Demon List Spreadsheet",
