@@ -1,6 +1,6 @@
-import {ProjectCard, Tag} from "@/lib/components/ProjectCard";
+import {ProjectCard, Tag} from "@/components/aguy/ProjectCard"
 
-import type {CardDetails} from "@/lib/components/ProjectCard"
+import type {CardDetails} from "@/components/aguy/ProjectCard"
 
 
 
